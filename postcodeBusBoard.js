@@ -48,10 +48,14 @@ function printDepartureBoard(atcocode) {
 
         console.log('\n');
         console.log(response.name);
-        let i = 0;
-        while (i < departureBoard.length && i < 5) {
-            printDepartureInfo(departureBoard[i]);
-            i++;
+        if (departureBoard.length == 0) {
+            console.log('No upcoming departures');
+        } else {
+            let i = 0;
+            while (i < departureBoard.length && i < 5) {
+                printDepartureInfo(departureBoard[i]);
+                i++;
+            }
         }
     }
 
