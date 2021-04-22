@@ -1,0 +1,12 @@
+div {
+    background-color: rgb(187, 235, 217);
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+h1{
+    text-align: center;
+}
+p{
+    font-weight: 600;
+}
