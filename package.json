@@ -1,0 +1,23 @@
+{
+  "name": "busboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "newBoard.js",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotita49/myBusBoard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotita49/myBusBoard/issues"
+  },
+  "homepage": "https://github.com/kotita49/myBusBoard#readme"
+}
