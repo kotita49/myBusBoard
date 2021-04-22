@@ -5,9 +5,8 @@ function enterpc() {
   var postcode = prompt('Please enter a postcode ')
   const postcodeExpr = /^([A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]|[A-HK-Y][0-9]([0-9]|[ABEHMNPRV-Y]))|[0-9][A-HJKS-UW])\ [0-9][ABD-HJLNP-UW-Z]{2}|(GIR\ 0AA)|(SAN\ TA1)|(BFPO\ (C\/O\ )?[0-9]{1,4})|((ASCN|BBND|[BFS]IQQ|PCRN|STHL|TDCU|TKCA)\ 1ZZ))$/i
   if (postcode != null) {
-    document.getElementById('g').innerHTML = 'You entered ' + postcode
-  }
-  if (!postcodeExpr.test(postcode)) {
+    document.getElementById('g').innerHTML = 'You entered ' + postcode;
+    if (!postcodeExpr.test(postcode)) {
     alert('Invalid postcode format.Please try again. Postcodes must have a space in them.')
     throw 'Invalid postcode format'
   }
@@ -18,13 +17,13 @@ function enterpc() {
     var response = JSON.parse(validRequest.responseText)
     var result = response.result
     if (!result) {
-      document.getElementById('g').innerHTML = 'Invalid postcode'
       alert('Invalid postcode. Please try again')
       throw 'Invalid postcode'
     }
   }
   validRequest.send()
   return postcode
+}
 }
 
 function getdata() {
