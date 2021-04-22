@@ -27,7 +27,6 @@ function checkPostcodeValid(postcode) {
     validRequest.onload = function () {
         var response = JSON.parse(validRequest.responseText);
         var result = response.result;
-        
         if (!result) {
             throw 'Invalid postcode';
         } 
